@@ -1,0 +1,216 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600italic,600,900' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	<title>Anonimiškumas Internete</title>
+	<meta name="description" content="Anonimiškumas internete">
+	<meta name="author" content="Tomas Liutvinas">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="header">
+		<h1>Anonimiškumas</h1>
+	</div>
+
+	<div class="row">
+		<div class="menu col-3">
+			<ul>
+				<li id="apie">APIE</li>
+				<li id="pagrindai">PAGRINDAI</li>
+				<li id="tor">TOR</li>
+				<li id="vpn">VPN</li>
+				<li id="įstatymai">ACTA, SOPA, PIPA...</li>
+				<li id="asmeninis">MANO PORA CENTŲ</li>
+			</ul>
+		</div>
+
+		<div class="col-6 articles">
+
+			<div class="article" id="apie_article">
+				<h1>Sveiki, aš esu Tomas Liutvinas.</h1>
+				<blockquote><b>Perteiksiu Jums ne tik informaciją, bet ir dalelę savęs.</b></blockquote>
+				<p>TAIP. Aš tai matau, visi tai matome. Tikrai ironiška, kad pačiame pirmąjame puslapyje apie <b><i>ANONIMIŠKUMĄ</i></b> aš pirmu sakiniu tiesiog prisistatau. Tačiau nepaisant to grįžkime į dabartį. Šią akimirką dėl tam tikrų susiklosčiusių priežasčių mes dabar esame kartu, Jūs ir aš viename ekrane, viename puslapyje. Gali būti, jog esate mano draugas, kuriam įmečiau "hyperlinką" į savo "blogą". ARBA Jūs esate dėstytojas, kuris galvoja, jog šis studentas pilsto iš tuščio į kiaurą tam, kad prirašytu minimalų reikalaujamą simbolių skaičių šiam darbui. Ar tai reiškia, kad aš tingiu rinkti informaciją? <i>TOLI GRAŽU NE!</i> Aš perskaičiau užduotį ir planuoju pilnai <q>įsijausti į blogerio vaidmenį</q> ir perteikti ne tik informaciją, bet ir dalelę savęs. </p>
+				<p>Kai internete užsimenama apie anonimiškumą, man, kaip žmogui, kuris virtualioje erdvėje praleido kone visą savo paauglystę į galvą ateina krūva asociacijų: interneto naršyklė TOR, proxy serveriai, VPN tinklai, taip pat ir įvairūs skandalingi su "NET NEUTRALITY" susiję įstatymai (ACTA, SOPA, PIPA).</p>
+				<p>Būtent todėl suteiksiu galimybę JUMS(!) su kai kuriomis iš šių temų susipažinti iš arčiau, pro mano akis (mintis, ar pirštus, kuriais renku tekstą).</p>
+			</div>
+
+			<div class="article" id="pagrindai_article">
+			<h1>Pagrindai - kas yra privatumas?</h1>
+			<p>Nereikia būti IT specialistu, kad žinotum, jog norint išlaikyti anonimiškumą neužtenka naršyklėje atsidaryti "private mode". Įspėjamasias žinutes, apie tai, jog jūsų tapatybė nėra paslėpta išvysite visų populiariausių naršyklių privataus rėžimo languose.</p>
+
+			<b><i>Privatus naršyklės rėžimas neišsaugo šios informacijos:</i></b><br>
+			<ul>
+			<li>Naršymo istorijos</li>
+			<li>Paieškos istorijos</li>
+			<li>"Cookies" (<sup>[6]</sup>informacija, kurią svetainės įrašo jūsų kompiuteryje tam, kad atsimintų apie jūsų padarytus veiksmus <a class="hlink" href="https://www.studijuok.lt/mokomoji-medziaga/studentu_darbai/LaurinaviciusPaulius/index.html#sec5" title="Kam išradinėti dviratį?" target="_blank">DAUGIAU INFORMACIJOS</a>)</li>
+			<li>Laikinų failų</li>
+			</ul>
+
+			<p>Uždarius privataus naršymo langą galite būti ramus, jog joks kitas vartotojas besinaudosiantis šiuo prietaisu nesužinos ką jūs darėte šios naršymo sesijos metu, na bent jau techniškai. Jis vistiek gali sužinoti, jei jam papasakos šalia jūsų stovėjęs draugas, vaizdo kamera, interneto paslaugų tiekėjas, šalia besidairanti valytoja arba hakeris, kuris jūsų kompiuteryje laiko programą, kuri filmuoja naršyklės privačios sesijos langus... na bet grįžkime prie esmės. Šis menamas vartotojas nesužinos apie tai naudodamas naršyklę arba jūsų kompiuterį. Vedant adresus į adresų juostą nebus teikiami automatinio užpildymo pasiūlymai su adresais, kuriuos vedėte naršydami privačiai.</p>
+
+			<h1>Kodėl privatus naršymas nelygus anoniminiam naršymui?</h1>
+			<video controls>
+			  <source src="../vid/anonimiskumo-pvz.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+			</video>
+
+			<p>Daugumai žmonių tokio anonimiškumo lygio pakanka, tačiau toli gražu ne visiems. Ar įmanoma naršyti taip, kad niekas niekada net labai norėdami ir jus specifiškai sekdami negalėtų sužinoti ką darote internete? Teisingo atsakymo nėra, nes tai yra techniškai neįmanoma, tačiau praktiškai sekimo procesą galima labai apsunkinti.</p>
+			</div>
+
+			<div class="article" id="tor_article">
+				<h1>TOR - The Onion Router (Svogūno maršrutizatorius)</h1>
+				<p><sup>[1]</sup>Tai internetinė naršyklė - savanoriškas kompiuterių tinklas, suteikiantis daugiau privatimo ir apsaugos. Šios naršyklės paslaptis paprasta. Pateikiant užklausą vietoje to, kad būtų sudaroma tiesioginė jungtis su norimu tašku, ši praeina pro tam tikrą tunelių seriją. Tam kad paprasčiau būtų įsivaizduoti - viskas vyksta filme, kai pagrobėjas skambina reikalauti išpirkos, o į jo skambutį atsiliepia žmogus apsuptas FTB agentų, kurie prašo pokalbį palaikyti kuo ilgiau, sekdami per kur atėjo skambutis. Lygiai taip pat (na šiek tiek kitaip, bet panašiu principu) yra "sumėtomos pėdos" ir jūsų TOR naršymo sesijos metu.</p>
+
+				<p>Veikiant tokiu principu galima pasiekti puslapius, kurie tam tikruose regionuose yra užblokuoti. Jei blokuojama geografinės pozicijos principu, vietą apie tai iš kur ateina užklausa serveriui nėra pateikiama (pateikiama paskutinio jungties mazgo vieta).</p>
+
+				<p>Veikiant tokiu principu galima pasiekti puslapius, kurie tam tikruose regionuose yra užblokuoti. Jei blokuojama geografinės pozicijos principu, vietą apie tai iš kur ateina užklausa serveriui nėra pateikiama (pateikiama paskutinio jungties mazgo vieta).</p>
+
+				<p>TOR taip pat siūlomas kaip įrankis programinės įrangos kūrėjams, norintiems suteikti galimybė naudotis TOR komunikavimo ir privatumo galimybėmis.</p>
+
+				<h1>Kaip paleisti TOR?</h1>
+				<video controls>
+				  <source src="../vid/launch-tor.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
+
+				<h1>Kas ir kodėl naudoja TOR?</h1>
+
+				<h2>KAS?</h2>
+
+				<p><i>Paprasti žmonės:</i><br>
+				Tam, kad sulaikytų interneto svetaines nuo informacijos apie juos kaupimo.<br>
+				Prisijungtu prie naujienų portalų, pasiektu informaciją, kuri blokuojama dėl jų regiono ar kitų priežasčių.<br>
+				TOR leidžia vartotojams publikuoti internetines svetaines nenurodant svetainės geografinės pozicijos.<br>
+				Naudojama bendraujant jautriomis temomis. Privatus bendravimas prievartavimo aukoms, sunkių išgyvenimų arba ligų kamoujamiems žmonėms.</p>
+				<p><i>Žurnalistai</i> naudoja saugiam bendravimui su informacijos tiekėjais.</p>
+
+				<p><i>Nevyriausybinės organizacijos</i> naudoja TOR, kad jų darbuotojai galėtų prisijungti būdami užsienyje neatskleidžiant jų bendradarbiavimo.</p>
+
+				<h2>KODĖL TOR NAUDOJAMAS?</h2>
+				<p>TOR apsaugo vartotojus nuo interneto duomenų srauto analizės. Tokia analizė viešame tinkle gali atskleisti kas bendrauja su kuo. Žinant iš kur ir į kur keliauja vartotojo duomenų srautas galima vartotojus sekti ir šiuos duomenis naudoti savo tikslais. E-Parduotuvės gali keisti įkainius atitinkamai pagal jūsų paieškos tendencijas. Pavyzdys: visada apsipirkinėjate mėnesio pradžioje, kodėlgi parduotuvėms nepakėlus savo įkainių būtent tuomet, kai jūs nusiteikę išleisti pinigų? Galbūt jau metus ieškote naujo šaldytuvo arba barzdaskutės? Žinant, kad anksčiau ar vėliau ją pirksite galima modifikuoti produkto kainas. Galbūt skirtumas minimalus, tačiau taikant tokią procedūra šimtus, tūkstančius ar milijonus kartų gaunamas atitinkamai kartų stipresnis rezultatas.</p>
+				<h2>Kaip veikia interneto srauto analizė?</h2>
+				<p>
+				Internetu siunčiami duomenų paketai turi dvi dalis: duomenų bazė ir antraštė (HEADER) duomenų bazė gali būti pašto žinutė, garso, vaizdo medžiaga, internetinis puslapis ar kt., net jei šie duomenys ir yra šifruojami, srauto analizė gali atidengti daug informacijos apie tai ką jūs darote. Tokia analizė suteikią dėmesį į paketo antraštę iš jos galima sužinoti duomenų kiekį (potencialiai žinutės ilgį), iš kur, į kur paketas yra siunčiamas ir kitą informaciją.</p>
+			</div>
+
+			<div class="article" id="vpn_article">
+				<h1>VPN - Nuo vilko prie... kito vilko?</h1>
+				<p><sup>[7]</sup>VPN - Virtualus privatus tinklas (<q>Virtual private network</q> Šio principas, suteikti tarpinę stotį tarp jūsų ir norimo pasiekti taško. Tokie tinklai kaip ir TOR, gali padėti apeiti regioninius apribojimus bei užtikrinti privatumo lygį. Tačiau yra ir kita medalio pusė. Tokį tinklą sukurti yra ganėtinai lengva, todėl tai gali padaryti (beveik) betkas. Gali būti, jog norėdami apsaugoti savo duomenis nuo vieno asmens (ar organizacijos) juos atiduosite kitam, potencialiai dar pavojingesniam. Tokia grėsmė išauga jei naudojamas nemokamas VPN.</p>
+				<p>Kita tokio tinklo paskirtis, suteikti prieigą vidiniuose įmonių tinkluose kaip ir KTU VPN.</p>
+				<blockquote><i>Man tikrai reikia VPN, į ką atsižvelgti jį renkantis?</i></blockquote>
+				<h2>Jurisdikcija - kur bus mano VPN?</h2>
+				<p><sub>[10]</sub> Svarbu, kad VPN tinklas būtų jums palankioje valstybėje, teisiškai. Tokioje, kur nebūtų lengva iš VPN tiekėjo išpešti duomenų. Todėl nerekomenduojamos valstybės, kurios šnipinėja viena kitą ir dalinasi gautais duomenimis tam, kad apeitų įstatymus, kurie pažeistų savo žmonių šnipinėjimo vietinius įstatymus.</p>
+				<h2>Pėdsakai</h2>
+				<p>Dauguma VPN tinklų išsaugo įrašus apie savo vartotojų veiklą. Dažniausiai dėl teisinių priežasčių, tam kad būtų galima apsiginti esant kriminaliniam tyrimui. Jei jūs norite užtikrinti savo privatumą patikrinkite koks yra įrašų apie vartotojų veiklą polisas jūsų pasirinktame VPN. Idealiai VPN turėtų nesaugoti jokių įrašų apie jokią jūsų veiklą.</p>
+				<h2>Apmokėjimas - ar atlikti pavedimą iš savo pagrindinės banko sąskaitos?</h2>
+				<p>Turint omenyje, jog siekiame anonimiškumo. Kaip anonimiškai sumokėti? Šai siūlomi variantai: BitCoin, grynieji arba dovanų kortelės. Jei sumokant reikia daugiau informacijos, nei elektroninio pašto adresas, galite tuo pačiu pateikti ir savo namų raktą. <i>(tai buvo sarkazmas, NEDUOKITE NEPAŽĮSTAMIEMS ŽMONĖMS SAVO NAMŲ RAKTO)</i></p>
+				<h2>Protokolas</h2>
+				Laikui bėgant susidursite su dilema, kokį VPN protokolą reikia pasirinkti? Trumpa versija: NE PPTP. Ilgesnė versija:
+				<ul>
+					<li>PPTP - Patogus, lengvas, greitas <b>pats nesaugiausias</b>.</li>
+					<li>L2TP - Laikomas saugiu, paprastai konfigūruojamas, greitesnis už OpenVPN, prieinamas įvairiose platformose, saugesnis už PPTP, tačiau saugumo neužtikrina.</li>
+					<li>OpenVPN - Suteikia galimybė plačiai konfigūruoti, labai saugus, apeina ugniasienes, gali naudoti įvairius šifravimo algoritmus, atviro kodo, tačiau reikalauja trečiųjų šalių programinės įrangos, gali būti sudėtinga paleisti, mobiliųjų prietaisų palaikymas nėra kokybiškas.</li>
+					<li>SSTP - Greitesnis už PPTP, SSTP ir L2TP protokolus, labai stabilus, labai saugus, lengvas paleidimas, tačiau palaikomas ne visų platformų, nėra atviro kodo protokolas.</li>
+				</ul>
+				<p>Štai čia <a class="hlink" title="Tikiuosi, neturi planų užsiimti nusikalstama veikla." href="https://www.bestvpn.com/blog/4147/pptp-vs-l2tp-vs-openvpn-vs-sstp-vs-ikev2/" target="_blank">DAR DAUGIAU INFORMACIJOS</a></p>
+
+				<h2>DNS ir IPv6 detalės</h2>
+				<h3>DNS</h3>
+				<p>Interneto tiekėjo, arba vieši DNS serveriai gali įrašinėti laiką, kada atliktos užklausos. Jei jums rūpi jūsų privatumas įsitikinkite, kad naudojamas DNS serveris (idealiu atveju suteikiamas VPN) neįrašinėja tokios informacijos.</p>
+				<h3>IPv6</h3>
+				<p>Taip pat įsitikinkite, kad VPN servisas blokuoja persiunčiamą IPv6 informaciją arba suteikia jums papildomą IPv6 adresą</p>
+				<h2>Papildoma informacija ir komentarai</h2>
+				<p>Jei viskas ko norite yra apeiti geografinius apribojimus, kad pažiūrėtumėte video su kačiuku, kuris yra užblokuotas jūsų šalyje tai pernelyg stengtis nereikės, tačiau norint apsaugoti savo privatumą derėtų atsižvelgti į visus aukščiau išvartintus punktus bei pasidomėti jais visais dar smulkiau, o rasti tenkinantį sprendimą nebus lengva.</p>
+			</div>
+
+			<div class="article" id="asmeninis_article">
+			<blockquote>Tomai, o ką man daryti? Ar aš niekada nebebūsiu saugus? Galbūt net neverta kurti šeimą, jei mano vaikai taps eilinėmis statistikos duomenų rinkimo aukomis. Ar vienintelė išeitis nusipirkti VPN, viskam naudoti TOR? O gal tiesiog nustoti naudotis interneto paslaugomis? Kaip pasislėpti nuo žmonių kurie apie mane renka informaciją? <b>PADĖK MAN.</b></blockquote>
+				<h1>Mano pora centų</h1>
+				<p>Mielas skaitytojau, jei perskaitei tiek daug, tai sutinki, jog manimi galima pasitikėti. Tiesa? <i>O ką sakytų žmogus, kuriuo negalima pasitikėti?</i> Hehehe.</p>
+				<p>Jei esate paprastas mirtingasis, neturite slaptų planų sunaikinti arba užvaldyti pasaulį ir jums beskaitant šį įrašą už lango nešmėruoja paparaciai, tuomet turiu Jums dvi geras naujienas. Pirmoji tai, kad jūsų duomenų srautas greičiausiai yra ganėtinai saugus. Kodėl?  O štai ir antra geroji naujiena, jei mėgstate blogas naujienas! Nes jūsų asmeninis gyvenimas niekam neįdomus.</p>
+				<p>Na nuoširdžiai atsakysiu. Jei norite būti paslaptingas "off the grid" žmogus ir naudotis interneto teikiamomis paslaugomis - tai yra įmanoma. Nekurkite paskyrų ten, kur jų nereikia, nesidalinkite viešai informacija, kurios nenorite viešinti (Kartą paviešinus ji dažniausiai yra archyvuojama ir nesunaikinama, kaip <a class="hlink" title="Dats my jam." href="https://www.youtube.com/results?search_query=grauziniene+remix" target="_blank">Loretos remixai</a> nes internetas tai gali.)</p>
+				<p>Tuo tarpu, eilinis jaunas žmogus šiais laikais turės įvairių socialinių paskyrų, kaip "Facebook", "Snapchat", "Instagram"... Tarkime tas žmogus esu aš. Turinį susijusį su savo asmeniniu gyvenimu, jei nevykdote nusikalstamos veiklos valdyti ganėtinai lengva. Nepostini nesamonių, nesižymi prie savo negražių nuotraukų, nesielgi gėdingai per renginius... Tiesa tiek google, tiek Facebook renka apie mane (ir jus) informaciją. Renka tai ko ieškau, iš kur naudojuosi paslaugomis, [10]"Google" net įrašinėja kur ir kada buvau (ir esu). Taip pat informaciją renka ir Amazon bei eBay, kiti pardavimų portalai. Tiek mes žinome, tačiau reikia atsakyti į klausimą <i>kaip tai paveikia mane?</i></p>
+				
+					<ul>
+						<li>Dalykai kurių dažnai ieškau būna arčiau ir pasiekiamesni.</li>
+						<li>Galiu sužinoti kokiu keliu važiavau, kai tyrinėjau apylinkes ir atradau gerą privažiavimą prie tolimo vandens telkinio (arba tiesiog prie Marių, aš visgi Kaunietis).</li>
+						<li>Kai pradedu domėtis kažkokiu produktu, visur matau įvairius pasiūlymus, kartais tai palengvina produktų suradimą, išsirinkimą, tačiau iš mano asmeninės patirties, tai net nusipirkus barzdaskutę, AMAZON toliau siuntinėja laiškus, kuriuose man pristato, kokių puikių barzdaskučių dar galėčiau nusipirkti. Ačiū. Ne.</li>
+						<li>Dėl savo privatumo nustatymų esu lengviau prieinamas potencialiems klientams, žmonės gali lengvai rasti mano kontaktus tiek <q>Google</q> tiek <q>Facebook</q> platformose.</li>
+						<li>Važiuojant navigacija man parenka kelią, kuriame yra mažesni kamščiai (Ačiū <q>Google</q>!)</li>
+					</ul>
+					<p>
+					Trumpai tariant, jei niekas nekeitinėja mano barzdaskučių kainų ir nesijuokia iš mano dainavimo treniruočių privačių įrašų (nors dėl šito dar galima ginčytis, kas labiau nukenčia ar aš ar klausytojas) eilinis žmogus neturi ko slėpti ir slėptis, nes, kuo daugiau informacijos apie mus turi servisai skirti mums padėti tuo labiau palengvinti mūsų kasdienius gyvenimus jie gali. Anonimiškumą galime palikti jautrioms temoms, žurnalistams ir 'Whistleblower'iams.
+					</p>
+
+			</div>
+
+			<div class="article" id="įstatymai_article">
+				<h1>ACTA, SOPA, PIPA... ką reiškia visos šios raidės?</h1>
+				<img src="../img/acta-01.jpg" alt="ACTA">
+				<blockquote><sup>[8]</sup>Nuotraukos iš Kauno Laisvės alėjoje vykusio protesto prieš ACTA sutarties priėmimą.</blockquote>
+				<h2>ACTA - ne tik Amerikoje kėsinamasi į žmonių internetinę laisvę ir privatumą.</h2>
+				<p><sup>[2]</sup>Anti-klastojimo prekybos sutartis tai tarptautinė sutartis siekusi sukurti standartą skaitmeninių teisių įgaliojimui. Šis dokumentas sulaukė daug kritikos ne tik dėl to, kad potencialiai tuometinis aprašymas atvertų mechanizmus, kurių dėka būtų pažeidžiamos civilinės žmonių teisės, bet ir dėl to, jog buvo ruošiamas už uždarų durų iki tol, kol buvo paviešintas svetainėje <q>Wikileaks</q> 2008 metais. Ši sutartis sulaukė didžiulių protestų visoje Europoje, (taip pat ir Lietuvoje!).</p>
+				<p>ACTA siekė priversti interneto tiekėjus rinkti ir pateikti informaciją apie vartotojo duomenų srautą. Suteikti teisę pradėti kriminalinį tyrimą, areštus ir tardymą asmenų, kurie galimai pažeidė intelektinės nuosavybės įstatymus. Taip pat įgaliotų vykdyti kriminalinius tyrimus (ir tirti sukauptą apie juos informaciją) prieš asmenis, kurie net neturi pateisinamos priežasties būti tardomais.</p>
+				<p>2016 metų Liepos mėnesį Wašingtono teisės koledže buvo surengta konferencija, kurioje dalyvavo daugiau, nei 90 akademinių, viešų interesų organizacijų ir taikomūjų atstovų iš šešių žemynų. Jų prieitos išvados buvo publikuotos 2010 metų Liepos 23-čią dieną:</p>
+				<blockquote>Viešai išleisto ACTA dokumento aprašymo sąlygos sukelia grėsmę viešiems interesams, įskaitant kiekvieną punktą, kuris buvo paneigtas derybininkų.</blockquote>
+				<p>2012 metų Liepos mėnesį Europos Parlamente šis dokumentas buvo atmestas.</p>
+				<img src="../img/acta-02.jpg" alt="ACTA">
+				<h2><q>Net neutrality</q></h2>
+				<p>Kaip jau minėjau pradiniame puslapyje - paauglystėje daug laiko praleidau internete. Tai buvo mano hobis, darbas, poilsis, namai, vieta kur socializuojuosi, vieta kur mokausi, vieta kur ieškau atsakymų, užduodu klausimus, susipažįstu su naujais žmonėmis, palaikau ryšius su senais... visą tai galėjau daryti, todėl, kad internetas yra atviras visiems.</p>
+				<p><sup>[5]</sup>Interneto neutralumas. Jei norėtumėte sužinoti, ką šis terminas reiškia, turbūt nerastumėte jokio kito žmogaus, kuris tai galėtų atlikti geriau, nei <i>žmogus, kuris sukūrė <b>INTERNETĄ</b></i> Taip. Internetas yra jaunas dalykas, mes gyvename amžiuje, kai jis dar tik vystosi. Natūralu, jog žmonės, kuriems interneto vystymasis kelia pavojų susirūpino jo apribojimais, tačiau gali būti (tikėkimės) jog tai padarė per vėlai ir jokie privatumą ir laisvą naršymą internete ribojantys įstatymai nebus priimti ateityje. Toliau pateikiu video įrašą, kuriame Tim Berners-Lee paaiškina, kas yra interneto neutralumas.</p>
+				<video  controls>
+				  <source src="../vid/Tim-Berners-Lee.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+				</video>
+
+				<p>Tuo tarpu, jei skaitote įrašą darbe ir nenorite, išsiduoti, jog nedirbate trumpai aprašysiu, ką šiame filmuke apie interneto neutralumą sako <i>žmogus, kuris sukūrė <b>INTERNETĄ</b></i></p>
+				<p><q>Interneto neutralumas yra tai: jei aš moku, kad prisijunčiau prie interneto tam tikromis sąlygomis. Jei tu moki už tai, kad prisijungtum prie interneto tam tikromis sąlygomis (geresnėmis arba blogesnėmis). Tuomet mes galime susisiekti internetu tomis sąlygomis.</q><i> (versta iš anglų kalbos)</i></p>
+
+				<blockquote>Internete turėtų nebūti cenzūros dėl regiono ar kitų kriterijų. Tačiau ji yra, todėl vartotojai ieško kaip ją apeiti. Pagrindinis įrankis - anonimiškumas.</blockquote>
+
+				<h2>PIPA - įstatymas siekiantis ginti autorių teises ar apriboti žmogaus laisves?</h2>
+				<p>Tai yra įstatymų pataisa glaudžiai susijusi su anonimiškumu internete.</p>
+				<p><sup>[4]</sup>„Protect IP Act“ buvo pasiūlytas įstatymas Jungtinėse Amerikos Valstijose siekiant suteikti vyriausybei ir autorinių teisių savininkams suteikti įrankius, kuriais šios institucijos galėtų apriboti prieigą prie „svetainių, kurios pažeidžia autorinių kurinių bei jų kopijų pardavimo teises“. Įstatymų pataisa pasiūlyta 2011 metų gegužės 12. Apskaičiuotas sistemos įgyvendinimas vyriausiybei būtų kainavęs 47 milijonus USD. Už juos turėjo būti padengtas naujų specialistų samdymo ir treniravimo procesai. Senato teismo komitetas įstatymo pataisą patvirtino, tačiau senatorius Ron Wyden ją atidėjo neapibrėžtam laikui.
+				PIPA buvo redaguota anksčiau siūlytos pataisos COICA („Combating Online Infringement and Counterfeits Act“) versija, kuri senato patvirtinimo nesulaukė 2010 metais. Panašus įstatymo ruošinys buvo paruoštas 2011 spalio 26 dieną pavadinimu SOPA („Stop Online Piracy Act“).</p>
+				<p>Internete visos šios pataisos sulaukė labai daug prieštaringų nuomonių ir protestų (ir ne tik internete, Lietuvoje taip pat vyko piketas, simbolizuojantis nepasitenkinimą siūlomoms pataisoms). Dėl šių priežasčių ir iškeltų  argumentų balsavimas dėl šių pataisų įgyvendinimo buvo atidėtas.
+				</p>
+				
+			</div>
+		</div>
+
+		<div class="col-3 right aside">
+			<h2>Apsauga</h2>
+			<p>Ar žinote kaip saugoti savo privatumą internete?</p>
+			<h2>Privatumas</h2>
+			<p>Ar jūsų duomenys yra saugūs?</p>
+			<h2>Kaip?</h2>
+			<p>Kaip galite užtikrinti savo saugumą?</p>
+		</div>
+	</div>
+
+	<div class="footer">
+	<h3>LITERATŪRA</h3>
+	<p>Čia rasite literatūros sąrašą.</p>
+		<div id="literatura">
+			<a class="literatura" title="Kaip VPN, tik... nemokamas ir saugesnis?" href="https://www.torproject.org/about/overview.html.en" target="_blank">[1] Informacija apie TOR</a><br>
+			<a class="literatura" title="Čia tas, kur yra protesto nuotraukų." href="https://en.wikipedia.org/wiki/Anti-Counterfeiting_Trade_Agreement" target="_blank">[2] ACTA</a>, 
+			<a class="literatura" title="Čia tas, apie kurį nieko neparašyta visoje svetainėje." href="https://en.wikipedia.org/wiki/Stop_Online_Piracy_Act" target="_blank">[3] SOPA</a>, 
+			<a class="literatura" title="Kiek jų gali būt?" href="https://en.wikipedia.org/wiki/PROTECT_IP_Act" target="_blank">[4] PIPA</a>, 
+			<a class="literatura" title="Vienas svarbiausių interneto principų." href="https://en.wikipedia.org/wiki/Net_neutrality" target="_blank">[5] Net Neutrality</a><br>
+			<a class="literatura" title="NOM NOM NOM NOM NOM." href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blank"><q>[6] Cookie</q></a><br>
+			<a class="literatura" title="Wikipedia siūlo perrašyti kardinaliai." href="https://en.wikipedia.org/wiki/Virtual_private_network" target="_blank">[7] VPN</a><br>
+			<a class="literatura" title="Čia kai neturėjau darbo ir mėgau fotografuoti." href="https://www.facebook.com/tomas.liutvinas/media_set?set=a.2681165383854.2110723.1097900619&type=3" target="_blank">[8] Nuotraukų šaltinis</a><br>
+			<a class="literatura" title="Nepameluosi dabar protingai žmonai, kad ilgai darbe užlaikė." href="https://www.google.com/maps/timeline" target="_blank">[9] <q>Google</q> location history</a><br>
+			<a class="literatura" title="NSA" href="https://www.privacytools.io/#ukusa" target="_blank">[10] Šalys, kurių VPN tinklais naudotis nerekomenduojama</a>
+			
+		</div>
+	</div>
+</body>
+</html>
